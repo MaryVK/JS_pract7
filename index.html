@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        /*   1   */
+
+        .container {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            height: 180px;
+            background-color: beige;
+        }
+        .digit {
+            width: 100px;
+            height: 90px;
+            border: 2px solid grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 5px;
+            margin-left: 25px;
+        }
+        .arrows {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            width: 40px;
+            height: 47px;
+            cursor: pointer;
+        }
+
+        /*    2    */
+
+        .container2 {
+            width: 700px;
+            height: 300px;
+            background-color: rgb(245, 238, 227);
+            padding: 10px;
+        }
+
+        #colors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        #btn {
+            width: 670px;
+            height: 30px;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        /*    3    */
+        
+        .container3 {
+            width: 700px;
+            height: 250px;
+            background-color: rgb(245, 238, 227);
+            padding: 10px;
+        }
+
+        .palette {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .color {
+            width: 50px;
+            height: 50px;
+            border: 1px black solid;
+            cursor: pointer;
+        }
+
+        /*    4    */
+
+        .container4 {
+            width: 700px;
+            height: 100%;
+            background-color: rgb(245, 238, 227);
+            padding: 10px;
+        }
+
+        .comment {
+            border: solid grey;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+
+        .input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 400px;
+            height: 100px;
+            margin-top: 10px;
+        }
+
+        #btn2 {
+            margin-top: 10px;
+            width: 400px;
+            height: 30px;
+        }
+
+
+        /*    5    */
+        .container5 {
+            width: 350px;
+            height: 200px;
+            background-color: rgb(245, 238, 227);
+            padding: 10px;
+        }
+
+        #country {
+            width: 300px;
+            padding: 5px;
+        }
+
+        #suggestios {
+            width: 300px;
+            border: 1px solid grey;
+        }
+
+        .item {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--    1     -->
+    <div class="container">
+        <div class="digit" id="value">0</div>
+            <div class="arrows">
+                <button id="up">🔼</button>
+                <button id="down">🔽</button>
+            </div>
+    </div>
+    <br><br>
+
+    <!--    2     -->
+    <div class="container2">
+        <div class="colors" id="colors"></div>
+        <button id="btn">Add block</button>
+    </div>
+    <br><br>
+
+    <!--    3     -->
+    <div class="container3">
+        <div class="palette">
+            <div class="color" data-color="red" style="background-color: red;"></div>
+            <div class="color" data-color="orange" style="background-color: orange;"></div>
+            <div class="color" data-color="yellow" style="background-color: rgb(255, 255, 0);"></div>
+            <div class="color" data-color="green" style="background-color: green;"></div>
+            <div class="color" data-color="blue" style="background-color: blue;"></div>
+            <div class="color" data-color="purple" style="background-color: purple;"></div>
+            <div class="color" data-color="grey" style="background-color: grey;"></div>
+        </div>
+        <p id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque sint quis nam, totam recusandae voluptates officiis nisi qui quam sit, dolores non magni aliquam atque? Maxime molestias excepturi doloremque architecto accusantium aliquid, sapiente laborum iure asperiores vero, repellat sit incidunt tenetur quaerat quos fugit ad perspiciatis necessitatibus blanditiis omnis, sequi aspernatur dolore. Nulla aspernatur voluptatem adipisci at quod, nesciunt labore! Officia soluta odit consequuntur ea natus repellat consectetur maiores cumque vitae? Eius labore earum pariatur! Labore impedit et corporis tenetur unde quis, magni quisquam possimus dicta culpa sunt at beatae optio vitae repudiandae incidunt cum tempore? At, distinctio vero.</p>
+    </div>
+    <br><br>
+
+    <!--    4      -->
+    <div class="container4">
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita vero, culpa ratione et autem laudantium voluptas magnam in tempora soluta neque fugit omnis, exercitationem impedit quidem corrupti iure quaerat fuga delectus veritatis atque. Distinctio voluptate voluptatem optio ut necessitatibus ipsa aliquid similique eveniet commodi error numquam doloremque et consequuntur, veritatis, accusamus porro minus soluta at alias aperiam! Numquam voluptatum et, asperiores quas modi nostrum repudiandae molestiae ab veniam aliquam expedita deleniti quibusdam labore, sunt in qui tenetur adipisci voluptate quam!</p>
+        <hr>
+        <h2>Comments </h2>
+        <div id="comments"></div>
+        <hr>
+        <h2>Your comment:</h2>
+        <input type="text" id="name" placeholder="your-name">
+        <br>
+        <textarea id="text" placeholder="your-comment"></textarea>
+
+        <br>
+        <button id="btn2">Add comment</button>
+    </div>
+    <br><br>
+
+    <!--    5      -->
+    <div class="container5">
+        <input type="text" id="country" placeholder="Enter country">
+        <div id="suggestions"></div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
